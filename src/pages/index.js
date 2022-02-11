@@ -7,7 +7,7 @@ import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section2 } from '../styles/GlobalComponents';
 import Backgroundimg from '../components/Backgroundimg/Backgroundimg';
-import Contact from '../components/Contact/contact';
+import Contact from '../components/Contact/Contact';
 
 const Home = () => {
   return (
