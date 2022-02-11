@@ -35,7 +35,7 @@ const Technologies = () => (
       <ListItem>
         <DiJava size="4rem" />
         <ListContainer>
-          <ListTitle>Langauges</ListTitle>
+          <ListTitle>Other Langauges</ListTitle>
           <ListParagraph>
             Experienced with <br />
             Java, Python and C#

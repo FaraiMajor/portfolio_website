@@ -1,6 +1,6 @@
 export const projects = [{
         title: 'Weather App',
-        description: "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
+        description: "Using React, Node.js, Express & PostgresSQL, Worked on a group project with a team of 4 members as part of TTP capstone project.Developed a web application for users to check the weather, save their favorite location. I worked on front-end home page which tells user current weather based on location using open cage geolocation ",
         image: '/images/weather.png',
         tags: ['PostgresSQL', 'Express', 'React', 'Node', 'Opencage'],
         source: 'https://github.com/FaraiMajor/WeatherRangers_frontend',
@@ -9,7 +9,7 @@ export const projects = [{
     },
     {
         title: 'Bank of React',
-        description: "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+        description: "The goal of this project was to describe the difference between server-side and client-side routing and Understand built in React Router components (Route, Router, Switch, Link, Redirect). Worked on this project with a group of 3 members. This project is a simple banking interface allowing user to add debits and credit and pull data from an API",
         image: '/images/bank.png',
         tags: ['React', 'JavaScript', 'CSS'],
         source: 'https://github.com/FaraiMajor/Bank-of-React',
@@ -18,7 +18,7 @@ export const projects = [{
     },
     {
         title: 'Grid Coloring',
-        description: "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+        description: "This was another project to further demonstrate an understanding of HTML, CSS, JS, DOM manipulation, and handling user events with ReactJS. This is also an opportunity to for improving organization in a React application",
         image: '/images/grid.png',
         tags: ['React', 'CSS', 'HTML'],
         source: 'https://github.com/FaraiMajor/react-grid',
@@ -27,7 +27,7 @@ export const projects = [{
     },
     {
         title: 'Recipes from Zimbabwe',
-        description: "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+        description: "Developed project to share with users the cultural dishes from Africa allowing users to find recipes of their choosing from the ones available and give them step by step instructions, project uses HTML and CSS. This is an ongoing project",
         image: '/images/recipe.png',
         tags: ['HTML', 'CSS'],
         source: 'https://github.com/FaraiMajor/recipe-project',

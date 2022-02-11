@@ -16,6 +16,8 @@ export const Img = styled.img `
  margin: 15% 0px 20px 10px;
   object-fit: cover;
   overflow: hidden; 
+  position: relative
+  
 `
 export const Btn = styled.button `
  background-color: orange;

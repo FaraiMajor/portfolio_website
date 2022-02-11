@@ -7,7 +7,7 @@ const data = [
     { number: 7, text: 'Project Contributed' },
     { number: 3.9, text: 'GPA', },
     { number: 10, text: 'Projects', },
-    { number: 5000, text: 'Github Stars', }
+    { number: 10, text: 'Github Stars', }
 ];
 
 const Acomplishments = () => (
