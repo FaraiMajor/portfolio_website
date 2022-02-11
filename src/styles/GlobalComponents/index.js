@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Section = styled.section`
+export const Section = styled.section `
   display: ${(props) => props.grid ? "grid" : "flex" };
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
@@ -23,8 +23,7 @@ export const Section = styled.section`
     flex-direction: column;
   }
 `
-
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled.h2 `
   font-weight: 800;
   font-size: ${(props) => props.main ? '65px' : '56px'};
   line-height: ${(props) => props.main ? '72px' : '56px'};
@@ -53,8 +52,78 @@ export const SectionTitle = styled.h2`
     max-width: 100%;
   }
 `
+export const SectionTitle2 = styled.h2 `
+  font-weight: 800;
+  font-size: ${(props) => props.main ? '65px' : '56px'};
+  line-height: ${(props) => props.main ? '72px' : '56px'};
+  width: max-content;
+  max-width: 100%;
+  // background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: linear-gradient(to right, #F46737 10%, #00e6e6 80%, #945DD6 10%);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 1s linear infinite;
+display: inline-block;
 
-export const SectionText = styled.p`
+@keyframes textclip {
+  to {
+      background-position: 200% center;
+  }
+}
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+  padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+
+  @media ${props => props.theme.breakpoints.md}{
+    font-size: ${(props) => props.main ? '56px' : '48px'};
+    line-height: ${(props) => props.main ? '56px' : '48px'};
+    margin-bottom: 12px;
+    padding: ${(props) => props.main ? '40px 0 12px' : '0'};
+  }
+
+  @media ${props => props.theme.breakpoints.sm}{
+    font-size: 32px;
+    line-height: 40px;
+    font-size: ${(props) => props.main ? '28px' : '32px'};
+    line-height: ${(props) => props.main ? '32px' : '40px'};
+    margin-bottom: 8px;
+    padding: ${(props) => props.main ? '16px 0 8px' : '0'};
+    max-width: 100%;
+  }
+`
+
+export const Section2 = styled.section `
+  display: ${(props) => props.grid ? "grid" : "flex" };
+  flex-direction: ${(props) => props.row ? "row" : "column" };
+  padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
+  margin: 0 auto;
+  max-width: 1040px;
+  // width: 100%;
+  box-sizing: content-box;
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 24px 48px 0;
+    flex-direction: column;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    padding: ${(props) => props.nopadding ? "0" : "16px 16px 0" } ;
+
+    width: calc(100vw - 32px);
+    flex-direction: column;
+  }
+`
+export const SectionText = styled.p `
   max-width: 800px;
   font-size: 24px;
   line-height: 40px;
@@ -76,7 +145,7 @@ export const SectionText = styled.p`
   }
 `
 
-export const SectionDivider = styled.div`
+export const SectionDivider = styled.div `
 
   width: 64px;
   height: 6px;
@@ -98,7 +167,7 @@ export const SectionDivider = styled.div`
     height: 2px;
   }
 `
-export const SectionSubText = styled.p`
+export const SectionSubText = styled.p `
   max-width: 800px;
   font-weight: 300;
   font-size: 18px;
@@ -116,7 +185,7 @@ export const SectionSubText = styled.p`
     line-height: 22px;
   }
 `
-export const SecondaryBtn = styled.button`
+export const SecondaryBtn = styled.button `
   color: #FFF;
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.33);
@@ -166,7 +235,7 @@ export const SecondaryBtn = styled.button`
   }
 `
 
-export const ButtonBack = styled.div`
+export const ButtonBack = styled.div `
   width: ${({ alt }) => alt ? '150px' : '262px'};
   height: ${({ alt }) => alt ? '52px' : '64px'};
   border-radius: 50px;
@@ -199,7 +268,7 @@ export const ButtonBack = styled.div`
   }
 `
 
-export const ButtonFront = styled.button`
+export const ButtonFront = styled.button `
   border: none;
   border-radius: 50px;
   color: #fff;
@@ -245,7 +314,7 @@ export const ButtonFront = styled.button`
   }
 `
 
-export const LinkContainer = styled.div`
+export const LinkContainer = styled.div `
   margin-left: ${({ large }) => large ? '24px' : '16px'};
   transition: 0.3s ease;
   justify-content: center;
@@ -267,7 +336,7 @@ export const LinkContainer = styled.div`
   }
 `
 
-export const LinkIconImg = styled.div`
+export const LinkIconImg = styled.div `
   display: flex;  
   height: ${({ large }) => large ? '32px' : '24px'};
 

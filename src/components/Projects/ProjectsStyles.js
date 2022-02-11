@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
-export const Img = styled.img`
+export const Img = styled.img `
   width:100%;
   height:100%;
   object-fit: cover;
   overflow: hidden;
 `
 
-export const GridContainer = styled.section`
+export const GridContainer = styled.section `
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 padding: 3rem;
@@ -22,7 +22,7 @@ row-gap: 3rem;
 }
 
 `
-export const BlogCard = styled.div`
+export const BlogCard = styled.div `
   border-radius: 10px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
@@ -31,7 +31,7 @@ export const BlogCard = styled.div`
     width: 100%;
   }
 `;
-export const TitleContent = styled.div`
+export const TitleContent = styled.div `
   text-align: center;
   z-index: 20;
   width: 100%;
@@ -39,7 +39,7 @@ export const TitleContent = styled.div`
 `;
 
 
-export const HeaderThree = styled.h3`
+export const HeaderThree = styled.h3 `
   font-weight: 500;
   letter-spacing: 2px;
   color: #9cc9e3;
@@ -47,7 +47,7 @@ export const HeaderThree = styled.h3`
   font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
 
-export const Hr = styled.hr`
+export const Hr = styled.hr `
   width: 50px;
   height: 3px;
   margin: 20px auto;
@@ -55,7 +55,7 @@ export const Hr = styled.hr`
   background: #d0bb57;
 `;
 
-export const Intro = styled.div`
+export const Intro = styled.div `
   width: 170px;
   margin: 0 auto;
   color: #dce3e7;
@@ -66,7 +66,7 @@ export const Intro = styled.div`
 `;
 
 
-export const CardInfo = styled.p`
+export const CardInfo = styled.p `
   width: 100%;
   padding: 0 50px;
   color: #e4e6e7;
@@ -80,7 +80,7 @@ export const CardInfo = styled.p`
 `;
 
 
-export const UtilityList = styled.ul`
+export const UtilityList = styled.ul `
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -88,11 +88,11 @@ export const UtilityList = styled.ul`
   margin: 2.5rem 0;
 `;
 
-export const ExternalLinks = styled.a`
-color:#d4c0c0;
+export const ExternalLinks = styled.a `
+color:#fff;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #6b3030;
+background: orange;
 border-radius: 15px;
 transition: 0.5s;
 &:hover{
@@ -101,12 +101,12 @@ transition: 0.5s;
 }
 `;
 
-export const TagList = styled.ul`
+export const TagList = styled.ul `
 display: flex;
 justify-content: space-around;
 padding: 2rem;
 `
-export const Tag = styled.li`
+export const Tag = styled.li `
 color: #d8bfbf;
 font-size: 1.5rem;
 `

@@ -1,19 +1,39 @@
 import React from 'react';
 
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
 const data = [
-  { number: 20, text: 'Open Source Projects'},
-  { number: 1000, text: 'Students', },
-  { number: 1900, text: 'Github Followers', },
-  { number: 5000, text: 'Github Stars', }
+    { number: 7, text: 'Project Contributed' },
+    { number: 3.9, text: 'GPA', },
+    { number: 10, text: 'Projects', },
+    { number: 5000, text: 'Github Stars', }
 ];
 
 const Acomplishments = () => (
-  <div>
-    Acomplishments
-  </div>
+    <Section>
+        <SectionTitle > Personal Achievements </SectionTitle>
+        <Boxes> {
+            data.map((card, index) => (
+                <Box key={index} >
+                    <BoxNum > {card.number} </BoxNum>
+                    <BoxText > {card.text} </BoxText>
+                </Box >
+            ))
+        }
+        </Boxes>
+        <br />
+        <SectionText style={{ display: "flex", alignItems: "center", color: "white", marginBottom: "20px" }}>
+            Tech Talent Pipeline Residency Program (TTP), New York, NY	<br />
+            January 2022 – Present
+        </SectionText>
+        <SectionText>
+
+            •	Selected to participate in NYC Tech Talent Pipeline Web Development Residency program which provides hands on training in full-stack web development<br />
+            •	Participated in numerous projects implementing learnings in Node, Express, React and JavaScript during month long web-intensive training program<br />
+            •	Developed skills in time management and financial literacy
+        </SectionText>
+    </Section >
 );
 
 export default Acomplishments;
