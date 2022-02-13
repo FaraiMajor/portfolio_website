@@ -2,7 +2,7 @@ import { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaTelegramPlane } from 'react-icons/fa';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import { Form, Btn, Input, Container, Label, Img, TextArea } from './ContactStyles'
+import { Form, Btn, Input, Container, Label, Img, TextArea, Text, Text2, LeftSection } from './ContactStyles'
 
 export default function Contact() {
     const formRef = useRef();
@@ -29,7 +29,11 @@ export default function Contact() {
             <SectionDivider />
             <SectionTitle >Contact Me</SectionTitle>
             <Container ref={formRef} onSubmit={handleSubmit}>
-                <Img src='../../images/mailz.jpeg' />
+                <LeftSection>
+                    <Text2 style={{ fontSize: "30px", color: "black" }}>Get in Touch📧🤝</Text2>
+                    <Text>Send Me Your Email Here!</Text>
+                    <Img src='../../images/mailz.jpeg' />
+                </LeftSection>
                 <Form >
                     <Label style={{ margin: "20px", marginTop: "20px" }}>Name</Label>
                     <Input type="text" name="user_name" />
